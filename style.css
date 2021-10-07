@@ -158,6 +158,17 @@ body{
         height:100vh;
         margin:0;
     }
+    .container::-webkit-scrollbar {
+        display:none;
+    }
+  
+   .container::-webkit-scrollbar-track {
+        display:none;
+    }
+  
+   .container::-webkit-scrollbar-thumb {
+         display:none; 
+    }
 }
 .alert {
     margin-bottom: 1rem;
