@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select:none;
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+    background:#2E2E2E;
+    overflow:hidden; 
+}
+.container{
+    width:420px;
+    height:620px;
+    margin:calc(100vh - 680px) auto;
+    background:#FFFFFF;
+    display:flex;
+    flex-direction:column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    overflow-y:scroll; 
+}
+.container::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+.container::-webkit-scrollbar-track {
+    background: #d8d6d6;        
+}
+  
+.container::-webkit-scrollbar-thumb {
+    background-color:#ffb30f;    
+    border-radius: 20px;       
+}
+.container h2{
+    background:#FFCA0F;
+    height:68px;
+    width:100%;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding:20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.inputClass{
+    background: #FFF9E5;
+    box-shadow: 4px 4px 10px rgba(47, 45, 40, 0.25);
+    height:60px;
+    width:95%;
+    margin:0px auto 12px;
+    position:relative;
+}
+.inputClass input{
+    outline:none;
+    border:none;
+    width:85%;
+    background:inherit;
+    font-size:16px;
+    padding:20px;
+    font-family: inherit;
+}
+.inputClass button{
+    position:absolute;
+    right:0;
+    padding:12px;
+    font-size: 32px;
+    border:none;
+    background:none;
+    color: #FF820F;
+    cursor:pointer;
+}
+.grocery_container{
+    visibility:hidden;
+}
+.show_container
+{
+    visibility:visible;
+}
+.grocery_list
+{
+    list-style:none;
+}
+.grocery_item{
+    display:flex;
+    background:rgb(252, 252, 154,0.2);
+    height:56px;
+    width:95%;
+    border-radius:56px;
+    margin:12px auto;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border:1px solid transparent;
+}
+
+.grocery_item h3{
+    text-transform:capitalize;
+    color:#FF820F;
+}
+.list_options .edit-btn{
+    all:unset;
+    opacity:0.6;
+    color:#4fc45b;
+    font-size:20px;
+    padding-right: 10px;
+    cursor:pointer;
+}
+.list_options .delete-btn{
+    all:unset;   
+    opacity:0.6;
+    color:#FF6767;
+    font-size:20px;
+    cursor:pointer;
+}
+.list_options .edit-btn:hover{
+    opacity:1;
+}
+.list_options .delete-btn:hover{
+    opacity:1;
+
+}
+.button_tick{
+    display:flex;
+    cursor:pointer;
+}
+.strike-through
+{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+.checkbox{
+    all:unset;
+    color:#444644;
+    font-size:20px;
+    padding-right: 10px;
+    cursor:pointer;
+}
+
+.clearBtn{
+    border:none;
+    background: #FFCA0F;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);    
+    width:150px;
+    height:48px;
+    color:white;
+    font-weight:700;
+    font-size: 16px;
+    text-align:center;
+    padding:15px;
+    cursor:pointer;
+    margin:16px calc(50% - 75px);
+}
+
+@media(max-width:600px)
+{
+    .container{
+        width:100%;
+        height:100vh;
+        margin:0;
+    }
+}
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+}
+  .danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+  .success {
+    color: #155724;
+    background: #d4edda;
+}
