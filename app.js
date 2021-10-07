@@ -68,16 +68,16 @@ function addItem(e)
         
         
         //add to localStorage
-        addToLocalStorage(id,value); 
+        addToLocalStorage(id,value[0]); 
         //set back to default
         setBackToDefault();
     }
     //edit option is clicked
-    else if(value!==" " && editFlag)
+    else if(value[0]!==" " && editFlag)
     {
-        editElement.innerHTML=value;
+        editElement.innerHTML=value[0];
         displayAlert("item editted","success");
-        editLocalStorage(editID, value);
+        editLocalStorage(editID, value[0]);
         setBackToDefault();
     }
     else{
@@ -306,4 +306,6 @@ function setupItems() {
       container.classList.add("show_container");
 }
   
+
+
 
