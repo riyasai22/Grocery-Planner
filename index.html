@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Grocery Planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off" class="grocery_form">
+        <!--title-->
+        <h2>Grocery Planner</h2>
+        <!--alert-->
+        <p class="alert"></p>
+        <!--inputClass-->
+        <div class="inputClass">
+          <input id="inpItem" type="text" placeholder="Add an item..." />
+          <button id="addItem" type="submit">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </div>
+      </form>
+      <!--grocery_container-->
+      <div class="grocery_container">
+        <!--grocery-list-->
+        <ul class="grocery_list"></ul>
+        <!--clearBtn-->
+        <button class="clearBtn">CLEAR ITEMS</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
