@@ -1,5 +1,5 @@
 # Grocery-Planner
-A simply mobile-first Vanilla Javascript grocery planner!
+A simple mobile-first Vanilla Javascript grocery planner!
 
 ## Snapshot
 
